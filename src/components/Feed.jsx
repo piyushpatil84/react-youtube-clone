@@ -19,7 +19,9 @@ const Feed = () => {
             searchResults &&
             searchResults?.map((item, i) => {
               if (item?.type !== 'video') return false
-              return <VideoCard key={i} video={item?.video} />
+              return (
+                <VideoCard key={item?.video?.videoId} video={item?.video} />
+              )
             })}
         </div>
       </div>

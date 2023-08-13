@@ -35,7 +35,7 @@ const Header = () => {
   const pageName = pathName?.split('/')?.filter(Boolean)?.[0]
 
   return (
-    <div className="sticky top-0 z-10 flex flex-row items-center justify-between h-14 px-4 md:px-5 bg-white bg-black">
+    <div className="sticky top-0 z-10 flex flex-row items-center justify-between h-14 px-4 md:px-5 bg-black">
       {loading && <Loader />}
 
       <div className="flex h-5 items-center">
